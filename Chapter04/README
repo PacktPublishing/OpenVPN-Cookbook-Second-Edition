@@ -1,0 +1,46 @@
+OpenVPN Cookbook Chapter 4 sample code
+
+The samples in this chapter are all openvpn configuration files, 
+some server configuration files and some client configuration files.
+
+Chapter 4 is divided up into 9 recipes. Below is a list of which
+configuration file is used in which recipe.
+
+4.1 Certificate generation
+none
+
+4.2 OpenSSL tricks: x509, pkcs12, verify output
+none
+
+4.3 Revoking certificates
+none
+
+4.4 The use of CRLs
+server: example4-6-server.conf
+client: example4-6-client.conf
+
+4.5 Checking expired/revoked certificates
+none
+
+4.6 Intermediary CA's
+none
+
+4.7 Multiple CA's: stacking, using the capath directive
+server: example4-9-server.conf
+client: example4-9-client.conf
+
+4.8 Determining which crypto library is used
+none
+
+4.9 Crypto features of OpenSSL and PolarSSL
+none
+
+4.10 Pusing ciphers
+server: example4-10-server.conf
+client: basic-udp-client.conf
+
+4.11 Elliptic curve support
+server: example4-11-server.conf
+client: example4-11-client.conf
+
+

@@ -1,0 +1,63 @@
+OpenVPN Cookbook Chapter 10 sample code
+
+The samples in this chapter are all openvpn configuration files, 
+some server configuration files and some client configuration files.
+
+Chapter 10 is divided up into 13 recipes. Below is a list of which
+configuration file is used in which recipe. i
+
+NOTE: the numbering of the example files is off-by-one for quite a few of the recipes :)
+
+10.1 Including config files in config files
+server: example10-1-common.conf, example10-1-server1.conf, example10-1-server2.conf
+
+10.2 Multiple remotes and remote-random
+server: basic-udp-server.conf
+client: example10-2-client.conf
+
+10.3 Inline certificates
+server: basic-udp-server.conf
+client: example10-3-client.conf
+
+10.4 Connection blocks
+server: basic-udp-server.conf
+client: example10-4-client.conf
+
+10.5 Details of 'ifconfig-pool-persist'
+server: example10-4-server.conf
+client1: basic-udp-client.conf
+client2: basic-udp-client.ovpn
+
+10.6 Connecting using a SOCKS proxy
+server: example8-9-server.conf
+client: example10-6-client.conf
+
+10.7 Connecting via an HTTP proxy
+server: example8-9-server.conf
+client: example10-6.ovpn
+
+10.8 Connecting via an HTTP proxy with authentication
+server: example8-9-server.conf, proxy.conf
+client: example10-7.ovpn
+
+10.9 IP-less setups (ifconfig-noexec)
+server:  example10-8-server.conf
+client:  example10-8-client.conf
+scripts: example10-8-up.sh, example10-8-route-up.sh
+
+10.10 Port-sharing with an HTTP server
+server: example10-9-server.conf
+client: example10-9.ovpn
+
+10.11 Routing features - redirect-private, allow-pull-fqdn
+server: example10-10-server.conf
+client: example10-10.ovpn
+
+10.12 Filtering out pushed options
+server: example9-2-server.conf
+client: example10-11.ovpn
+
+10.13 Handing out public IP addresses
+server: example10-12-server.conf
+client: basic-udp-client.ovpn
+

@@ -1,0 +1,58 @@
+OpenVPN Cookbook Chapter 2 sample code
+
+The samples in this chapter are all openvpn configuration files, 
+some server configuration files and some client configuration files.
+
+Chapter 2 is divided up into 10 recipes. Below is a list of which
+configuration file is used in which recipe.
+
+2.1 Setting up the public and private keys
+none
+
+2.2 Simple configuration
+server: example2-2-server.conf
+client: example2-2-client.conf
+
+2.3 Server-side routing
+server: basic-udp-server.conf, basic-tcp-server.conf
+client: basic-udp-client.conf, basic-tcp-client.conf
+
+2.4 Adding IPv6 support
+server: example2-4-server.conf
+client: basic-udp-client.conf
+
+2.5 Using 'client-config-dir' files
+server: example2-5-server.conf
+client: basic-udp-client.conf
+
+2.6 Routing - subnets on both sides
+server: example2-6-server.conf
+client: basic-udp-client.conf
+
+2.7 Redirecting the default gateway
+server: example2-7-server.conf
+client: basic-udp-client.conf
+
+2.8 Redirecting the IPv6 default gateway
+server: example2-8-server.conf
+client: basic-udp-client.conf
+
+2.9 Using an 'ifconfig-pool' block
+server: example2-9-server.conf
+client1: basic-udp-client.conf
+client2: basic-udp-client.ovpn, basic-tcp-client.ovpn
+
+2.10 Using the status file
+server: example2-10-server.conf
+client1: basic-udp-client.conf
+client2: basic-udp-client.ovpn
+
+2.11 Management interface
+server: basic-udp-server.conf
+client: example2-11.ovpn
+
+2.10 Proxy-arp
+server: example2-12-server.conf
+client: basic-udp-client.ovpn
+scripts: proxyarp-connect.sh, proxyarp-disconnect.sh
+

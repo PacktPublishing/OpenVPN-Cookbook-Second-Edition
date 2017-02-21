@@ -1,0 +1,27 @@
+OpenVPN Cookbook Chapter 1 sample code
+
+The samples in this chapter are all openvpn configuration files, 
+some server configuration files and some client configuration files.
+
+Chapter 1 is divided up into 8 recipes. Below is a list of which
+configuration file is used in which recipe. The first 5 recipes
+of chapter 1 did not use a configuration file.
+
+1.6 Configuration files vs the command-line
+client: example1-6-client.conf
+
+1.7 Complete site-to-site setup
+server: example1-7-server.conf
+client: example1-7-client.conf
+
+1.8 3-way routing
+serverB: example1-8-BtoA.conf, example1-8-BtoC.conf
+serverC: example1-8-CtoA.conf
+
+clientA: example1-8-AtoB.conf, example1-8-AtoC.conf
+clientC: example1-8-CtoB.conf
+
+1.9 Using IPv6
+server: example1-9-server.conf
+client: example1-9-client.conf
+

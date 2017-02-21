@@ -1,0 +1,52 @@
+OpenVPN Cookbook Chapter 9 sample code
+
+The samples in this chapter are all openvpn configuration files, 
+some server configuration files and some client configuration files.
+
+Chapter 9 is divided up into 11 recipes. Below is a list of which
+configuration file is used in which recipe.
+
+9.1 Linux: using NetworkManager 
+server: basic-udp-server.conf
+
+9.2 Linux: using pull-resolv-conf
+server: example9-2-server.conf
+client: example9-2-client.conf
+
+9.3 Windows: elevated privileges
+server: basic-udp-server.conf
+client: example5-1.ovpn
+
+9.4 Windows: using the CryptoAPI store
+server: basic-udp-server.conf
+client: example9-4.ovpn
+
+9.5 Windows: updating the DNS cache
+server: example9-2-server.conf
+client: example9-5.ovpn
+
+9.6 Windows: running OpenVPN as a service
+server: basic-udp-server.conf
+client: example9-6.ovpn
+
+9.7 Windows: public versus private network adapters
+server: basic-udp-server.conf
+client: basic-udp-client.ovpn
+
+9.8 Windows: routing methods
+server: basic-udp-server.conf
+client: example9-8.ovpn
+
+9.9 Window 8+: ensure DNS lookups are secure
+server: basic-udp-server.conf
+client: example9-9.ovpn
+
+9.10 Android: using the OpenVPN for Android client
+server: basic-udp-server.conf
+client: example9-10.ovpn
+
+9.11 Push-peer-info: pushing options to Android clients
+server: example9-11-server.conf
+client: example9-10.ovpn
+script: example9-11.sh
+

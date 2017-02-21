@@ -1,0 +1,44 @@
+OpenVPN Cookbook Chapter 7 sample code
+
+The samples in this chapter are all openvpn configuration files, 
+some server configuration files and some client configuration files.
+
+Chapter 7 is divided up into 9 recipes. Below is a list of which
+configuration file is used in which recipe.
+
+7.1 The missing return route
+server: basic-udp-server.conf
+client: basic-udp-client.conf
+
+7.2 Missing return routes when 'iroute' is used
+server: example2-5-server.conf
+client: basic-udp-client.conf
+
+7.3 All clients function except the OpenVPN endpoints
+server: example2-5-server.conf
+client: basic-udp-client.conf
+
+7.4 Source routing
+server: basic-udp-server.conf
+client: basic-udp-client.ovpn
+
+7.5 Routing and permissions on Windows
+server: basic-udp-server.conf
+client: basic-udp-client.ovpn
+
+7.6 Unable to change Windows network location
+server: example2-7-server.conf
+client: basic-udp-client.ovpn
+
+7.7 Troubleshooting client-to-client traffic routing
+server: basic-udp-server.conf
+client: basic-udp-client.conf
+
+7.8 Understanding the 'MULTI: bad source' warnings
+server: example2-5-server.conf
+client: basic-udp-client.conf
+
+7.9 Failure when redirecting the default gateway
+server: basic-udp-server.conf
+client: example7-9-client.conf
+

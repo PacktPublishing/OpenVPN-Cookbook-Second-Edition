@@ -1,0 +1,48 @@
+OpenVPN Cookbook Chapter 3 sample code
+
+The samples in this chapter are openvpn configuration files, 
+as well as some helper scripts.
+
+Chapter 3 is divided up into 8 recipes. Below is a list of which
+configuration file is used in which recipe.
+
+3.1 Simple configuration - non bridged
+server: example3-1-server.conf
+client: example3-1-client.conf
+
+3.2 Enabling Client-to-Client traffic
+server: example3-2-server.conf
+client1: example3-2-client1.ovpn
+client2: example3-2-client2.ovpn
+
+3.3 Bridging - Linux
+server: example3-3-server.conf
+scripts: example3-3-bridge-start, example3-3-bridge-stop
+client: example3-2-client2.ovpn
+
+3.4 Bridging - Windows
+server: example3-4-server.conf
+client: example3-1-client.conf
+
+3.5 Checking broadcast and non-IP traffic
+server: example3-3-server.conf
+scripts: example3-3-bridge-start, example3-3-bridge-stop
+client: example3-2-client2.ovpn
+
+3.6 External DHCP
+server: example3-6-server.conf
+client: example3-2-client2.ovpn
+
+3.7 Using the status file
+server: example3-7-server.conf
+client: example3-1-client.conf
+
+3.8 Management interface
+server: example3-8-server.conf
+client1: example3-1-client.conf
+client2: example3-2-client2.ovpn
+
+3.9 Integrating IPv6 into TAP-style networks
+server: example3-9-server.conf
+client: example3-1-client.conf
+

@@ -1,0 +1,55 @@
+OpenVPN Cookbook Chapter 5 sample code
+
+The samples in this chapter are openvpn configuration files, 
+as well as some helper scripts.
+
+Chapter 5 is divided up into 10 recipes. Below is a list of which
+configuration file is used in which recipe.
+
+5.1 Using a Client-side up/down script
+server: example5-1-server.conf
+client: example5-1.ovpn
+script: updown.bat
+
+5.2 Using a 'client-connect' script
+server: example5-2-server.conf
+client: basic-udp-client.ovpn
+script: example5-2-connect.sh
+
+5.3 Using a 'learn-address' script
+server: example5-3-server.conf
+client: basic-udp-client.ovpn
+script: example5-3-learn-address.sh
+
+5.4 Using a 'tls-verify' script
+server: example5-4-server.conf
+client: basic-udp-client.ovpn
+scripts: example5-4-tls-verify.sh, example5-4-tls-verify.sh.allowed
+
+5.5 Using a 'auth-user-pass-verify' script
+server: example5-5-server.conf
+client: example5-5-client.conf
+scripts: example5-5-aupv.sh, example5-5-aupv.sh.passwd
+
+5.6 Script order
+server: example5-6-server.conf
+client: example5-5-client.conf
+script: example5-6-script.sh
+
+5.7 Script security and logging
+server: example5-1-server.conf
+client: example5-7-client.conf
+script: example5-7-up.sh
+
+5.8 Scripting and IPv6
+server: example5-8-server.conf
+client: example5-8-client.conf
+script: example5-8-script.sh
+
+5.9 Using the 'down-root' plugin
+server: example5-9-server.conf
+script: example5-9.sh
+
+5.10 Using the PAM authentication plugin
+server: example5-10-server.conf
+client: example5-10.ovpn

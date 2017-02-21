@@ -1,0 +1,48 @@
+OpenVPN Cookbook Chapter 6 sample code
+
+The samples in this chapter are all openvpn configuration files, 
+some server configuration files and some client configuration files.
+
+Chapter 6 is divided up into 10 recipes. Below is a list of which
+configuration file is used in which recipe.
+
+6.1 Cipher mismatches
+server: basic-udp-server.conf
+client: example6-1-client.conf
+
+6.2 Tun versus TAP mismatches
+server: basic-udp-server.conf
+client: example6-2-client.conf
+
+6.3 Compression mismatches
+server: example6-3-server.conf
+client: basic-udp-client.conf
+
+6.4 Key mismatches
+server: basic-udp-server.conf
+client: example6-4-client.conf
+
+6.5 Troubleshooting MTU and tun-mtu issues
+server: basic-udp-server.conf
+client: example6-5-client.conf
+
+6.6 Troubleshooting network connectivity
+server: basic-udp-server.conf
+client: basic-udp-client.conf
+
+6.7 Troubleshooting client-config-dir issues
+server: example6-7-server.conf
+client: basic-udp-client.conf
+
+6.8 Troubleshooting multipel remote issues
+server: basic-udp-server.conf
+client: example6-8-client.conf
+
+6.9 Troubleshooting bridging issues
+server: example6-9-server.conf
+client: basic-udp-client.conf
+
+6.10 How to read the OpenVPN log files
+server: basic-udp-server.conf
+client: example6-5-client.conf
+

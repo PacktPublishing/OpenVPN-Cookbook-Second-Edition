@@ -1,0 +1,9 @@
+#!/bin/bash
+
+br="br0"
+tap="tap0"
+
+ifconfig $br down
+brctl delbr $br
+openvpn --rmtun --dev $tap
+
